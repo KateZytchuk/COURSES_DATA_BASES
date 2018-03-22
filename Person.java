@@ -18,19 +18,23 @@ public class Person
     {
     	
     }
-    public int getId() {
+    public int getId() 
+    {
         return id;
     }
  
-    public String getFname() {
+    public String getFname() 
+    {
         return fname;
     }
  
-    public int getAge() {
+    public int getAge() 
+    {
         return age;
     }
  
-    public String getLname() {
+    public String getLname() 
+    {    
         return lname;
     }
     
