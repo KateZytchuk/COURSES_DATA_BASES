@@ -36,15 +36,7 @@ public class Person_DM extends AbstractTableModel
 	@Override
 	public int getColumnCount() 
 	{
-		Person p = new Person();
-		Class cc = p.getClass();
-		Field [] ff  = cc.getDeclaredFields();
-		int count = 0;
-		for(Field f: ff)
-		{
-			count++;
-		}
-		return ff.length;
+		return 4;
 	}
 
 	@Override
