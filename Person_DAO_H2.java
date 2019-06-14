@@ -1,4 +1,4 @@
-package DAL;
+﻿package DAL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -31,12 +31,12 @@ public class Person_DAO_H2
 	  }
 	  catch(ClassNotFoundException e) 
 	  {
-	   JOptionPane.showMessageDialog(null, "Драйвер не найден");
+	   JOptionPane.showMessageDialog(null, "Р”СЂР°Р№РІРµСЂ РЅРµ РЅР°Р№РґРµРЅ");
 	   System.exit(1);
 	  }
 	  catch(SQLException e)
 	  {
-	   JOptionPane.showMessageDialog(null, "Ошибка: " + e.getMessage());
+	   JOptionPane.showMessageDialog(null, "РћС€РёР±РєР°: " + e.getMessage());
 	   System.exit(1);
 	  }
 	  return con;
@@ -56,12 +56,12 @@ public class Person_DAO_H2
 	  }
 	  catch(ClassNotFoundException e) 
 	  {
-	   JOptionPane.showMessageDialog(null, "Драйвер не найден");
+	   JOptionPane.showMessageDialog(null, "Р”СЂР°Р№РІРµСЂ РЅРµ РЅР°Р№РґРµРЅ");
 	   System.exit(1);
 	  }
 	  catch(SQLException e)
 	  {
-	   JOptionPane.showMessageDialog(null, "Ошибка: " + e.getMessage());
+	   JOptionPane.showMessageDialog(null, "РћС€РёР±РєР°: " + e.getMessage());
 	   System.exit(1);
 	  }
 	  return con;

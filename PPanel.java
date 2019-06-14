@@ -1,4 +1,4 @@
-package view;
+п»їpackage view;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -19,13 +19,13 @@ public class PPanel extends JFrame
 	public PPanel()
 	{	
 		my_pnl.setLayout(null);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);// что будет при выходе
+		setDefaultCloseOperation(EXIT_ON_CLOSE);// С‡С‚Рѕ Р±СѓРґРµС‚ РїСЂРё РІС‹С…РѕРґРµ
 		add_table();		
 		add_lable();
 		add_textfield();
 		add_buttons();
-		my_pnl.setSize(830,650);//задаем размеры окна при старте 
-		my_pnl.setVisible(true);//делаем видимым
+		my_pnl.setSize(830,650);//Р·Р°РґР°РµРј СЂР°Р·РјРµСЂС‹ РѕРєРЅР° РїСЂРё СЃС‚Р°СЂС‚Рµ 
+		my_pnl.setVisible(true);//РґРµР»Р°РµРј РІРёРґРёРјС‹Рј
 	}
 	public  void add_table()
 	{		
@@ -38,7 +38,7 @@ public class PPanel extends JFrame
 	public void add_lable()
 	{
 		//_____________________________
-		// добавляем надпись "ID"
+		// РґРѕР±Р°РІР»СЏРµРј РЅР°РґРїРёСЃСЊ "ID"
 		//_____________________________
 		JLabel title_id = new JLabel("ID", JLabel.CENTER);
 		title_id.setForeground(Color.black);
@@ -48,7 +48,7 @@ public class PPanel extends JFrame
 		my_pnl.add(title_id);
 
 		//_____________________________
-		// добавляем надпись "FName"
+		// РґРѕР±Р°РІР»СЏРµРј РЅР°РґРїРёСЃСЊ "FName"
 		//_____________________________
 		JLabel title_fname = new JLabel("FName", JLabel.CENTER);
 		title_fname.setForeground(Color.black);
@@ -58,7 +58,7 @@ public class PPanel extends JFrame
 		my_pnl.add(title_fname);
 
 		//_____________________________
-		// добавляем надпись "LName"
+		// РґРѕР±Р°РІР»СЏРµРј РЅР°РґРїРёСЃСЊ "LName"
 		//_____________________________
 		JLabel title_lname = new JLabel("LName", JLabel.CENTER);
 		title_lname.setForeground(Color.black);
@@ -68,7 +68,7 @@ public class PPanel extends JFrame
 		my_pnl.add(title_lname);
 
 		//_____________________________
-		// добавляем надпись "Age"
+		// РґРѕР±Р°РІР»СЏРµРј РЅР°РґРїРёСЃСЊ "Age"
 		//_____________________________
 		JLabel title_age = new JLabel("Age", JLabel.CENTER);
 		title_age.setForeground(Color.black);
@@ -80,7 +80,7 @@ public class PPanel extends JFrame
 	public void add_textfield()
 	{
 		//_____________________________
-		// добавляем текстовое поле для "ID"
+		// РґРѕР±Р°РІР»СЏРµРј С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ РґР»СЏ "ID"
 		//_____________________________
 		text_id = new JTextField(20);
 		text_id.setLocation(420, 30);
@@ -89,7 +89,7 @@ public class PPanel extends JFrame
 		my_pnl.add(text_id);
 
 		//_____________________________
-		// добавляем текстовое поле для "FName"
+		// РґРѕР±Р°РІР»СЏРµРј С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ РґР»СЏ "FName"
 		//_____________________________
 		text_fname = new JTextField(20);
 		text_fname.setLocation(420, 170);
@@ -98,7 +98,7 @@ public class PPanel extends JFrame
 		my_pnl.add(text_fname);
 
 		//_____________________________
-		// добавляем текстовое поле для "LName"
+		// РґРѕР±Р°РІР»СЏРµРј С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ РґР»СЏ "LName"
 		//_____________________________
 		text_lname = new JTextField(20);
 		text_lname.setLocation(420, 100);
@@ -107,7 +107,7 @@ public class PPanel extends JFrame
 		my_pnl.add(text_lname);
 
 		//_____________________________
-		// добавляем текстовое поле для "Age"
+		// РґРѕР±Р°РІР»СЏРµРј С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ РґР»СЏ "Age"
 		//_____________________________	
 		text_age = new JTextField(20);
 		text_age.setLocation(420, 240);
@@ -118,7 +118,7 @@ public class PPanel extends JFrame
 	public void add_buttons()
 	{
 		//_____________________________
-		// добавляем кнопку "Создать"
+		// РґРѕР±Р°РІР»СЏРµРј РєРЅРѕРїРєСѓ "РЎРѕР·РґР°С‚СЊ"
 		//_____________________________
 		JButton crt = new JButton ("Create");
 		crt.setSize(80, 30);
@@ -126,7 +126,7 @@ public class PPanel extends JFrame
 		my_pnl.add(crt);
 		crt.addActionListener(dm.create);		
 		//_____________________________
-		// добавляем кнопку "Считать"
+		// РґРѕР±Р°РІР»СЏРµРј РєРЅРѕРїРєСѓ "РЎС‡РёС‚Р°С‚СЊ"
 		//_____________________________
 		JButton rd = new JButton ("Read");
 		rd.setSize(80, 30);
@@ -134,7 +134,7 @@ public class PPanel extends JFrame
 		my_pnl.add(rd);
 		rd.addActionListener(dm.read);
 		//_____________________________
-		// добавляем кнопку "Обновить"
+		// РґРѕР±Р°РІР»СЏРµРј РєРЅРѕРїРєСѓ "РћР±РЅРѕРІРёС‚СЊ"
 		//_____________________________
 		JButton upd = new JButton ("Update");
 		upd.setSize(80, 30);
@@ -142,7 +142,7 @@ public class PPanel extends JFrame
 		my_pnl.add(upd);
 		upd.addActionListener(dm.update);
 		//_____________________________
-		// добавляем кнопку "Удалить"
+		// РґРѕР±Р°РІР»СЏРµРј РєРЅРѕРїРєСѓ "РЈРґР°Р»РёС‚СЊ"
 		//_____________________________
 		JButton dlt = new JButton ("Delete");
 		dlt.setSize(80, 30);

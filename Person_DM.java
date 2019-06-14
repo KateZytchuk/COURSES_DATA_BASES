@@ -1,4 +1,4 @@
-package view;
+﻿package view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,7 +18,7 @@ public class Person_DM extends AbstractTableModel
 	Person_DAO pd = null;
 	public Person_DM()
 	{
-		pd = new Person_DAO_Mock(); //��� ������ � ������ ����� ������� ���
+		pd = new Person_DAO_Mock(); //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 		lst = pd.read();	
 	}
 	@Override
@@ -74,7 +74,7 @@ public class Person_DM extends AbstractTableModel
 			Person my = new Person(my_id, my_lname, my_fname,  my_age);
 			pd.create(my);	
 			my_reload();
-			JOptionPane.showMessageDialog(null, "��������� ������ �   ��");
+			JOptionPane.showMessageDialog(null, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ   пїЅпїЅ");
 		}
 	}
 	ActionRead read = new ActionRead();
@@ -85,7 +85,7 @@ public class Person_DM extends AbstractTableModel
 		{
 			pd.read();
 			my_reload();
-			JOptionPane.showMessageDialog(null, "������ ������ ��  ��");
+			JOptionPane.showMessageDialog(null, "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ  пїЅпїЅ");
 		}
 	}
 	ActionUpdate update = new ActionUpdate();
@@ -101,7 +101,7 @@ public class Person_DM extends AbstractTableModel
 			Person my = new Person(my_id, my_lname, my_fname,  my_age);
 			pd.update(my);	
 			my_reload();
-			JOptionPane.showMessageDialog(null, "��������� ������ ��  ��");
+			JOptionPane.showMessageDialog(null, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ  пїЅпїЅ");
 		}
 	}
 	ActionDelete delete = new ActionDelete();
@@ -117,7 +117,7 @@ public class Person_DM extends AbstractTableModel
 			Person my = new Person(my_id,  my_lname, my_fname, my_age);
 			pd.delete(my);	
 			my_reload();
-			JOptionPane.showMessageDialog(null, "������� ������ ��  ��");
+			JOptionPane.showMessageDialog(null, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ  пїЅпїЅ");
 			
 		}	
 	}
